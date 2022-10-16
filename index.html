@@ -7,40 +7,200 @@
     <title>Kurukshetra'22 | CEG</title>
     <link rel="shortcut icon" href="images/logo192.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
       <div class="head_wrapper">
         <img class="k_head" src="images/kurukshetra_logo_header.png" alt="" />
-        <div class="menu">
-          <svg
-            class="ham_svg active"
-            width="40"
-            height="40"
-            viewBox="0 0 32 42"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g transform="matrix(1,0,0,1,-389.5,-264.004)">
-              <g id="arrow_left2">
-                <g transform="matrix(1,0,0,1,0,5)">
-                  <path
-                    id="top"
-                    d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
-                  ></path>
-                </g>
-                <g
-                  transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)"
-                >
-                  <path
-                    id="bottom"
-                    d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
-                  ></path>
-                </g>
-                <path id="middle" d="M390,284.967L420,284.967"></path>
+        <svg
+          class="menu"
+          width="300"
+          height="300"
+          viewBox="0 0 32 42"
+          xmlns="http://www.w3.org/2000/svg"
+          onmouseover="this.classList.toggle('active')"
+          onmouseout="this.classList.toggle('active')"
+          onclick="menu_toggle()"
+        >
+          <g transform="matrix(1,0,0,1,-389.5,-264.004)">
+            <g id="arrow_left2">
+              <g transform="matrix(1,0,0,1,0,5)">
+                <path
+                  id="top"
+                  d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                />
               </g>
+              <g
+                transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)"
+              >
+                <path
+                  id="bottom"
+                  d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                />
+              </g>
+              <path id="middle" d="M390,284.967L420,284.967" />
             </g>
-          </svg>
-        </div>
+          </g>
+        </svg>
+        <nav id="navig" class="hide">
+          <img
+            id="exit-cta"
+            class="menu_exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+            onclick="menu_toggle()"
+          />
+
+          <div class="primary_nav">
+            <div
+              class="cell cell_1 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> home </span>
+                <p>Home</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_2 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons fs48"> info </span>
+                <p>About</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_3 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> event</span>
+                <p>Events</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_4 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> construction </span>
+                <p>Workshops</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_5 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> account_tree </span>
+                <p>CTF Projects</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_6 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> settings_suggest </span>
+                <p>Project Competition</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_7 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span
+                  ><img
+                    class="cell_icons"
+                    src="images/k_talks_white.png"
+                    alt="K! Talk logo"
+                  />
+                </span>
+                <p>K! Talks</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_8 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span
+                  ><img
+                    class="cell_icons"
+                    src="images//xceed_logo.png"
+                    alt="XCEED logo"
+                  />
+                </span>
+                <p>XCEED</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_9 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> corporate_fare </span>
+                <p>Sponsors</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_10 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> menu_book </span>
+                <p>K! Mag</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_11 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> work </span>
+                <p>Team Kurukshetra</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_12 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> mail </span>
+                <p>Contact</p>
+              </div>
+            </div>
+            <div
+              class="cell cell_13 center"
+              onmouseover="this.classList.toggle('active')"
+              onmouseout="this.classList.toggle('active')"
+            >
+              <div class="contents">
+                <span class="material-icons"> login </span>
+                <p>Login</p>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
